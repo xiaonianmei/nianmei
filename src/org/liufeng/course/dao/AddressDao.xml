@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC   
+    "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+   
+  <mapper namespace="org.liufeng.course.dao.AddressDao">
+  
+  <resultMap type="org.liufeng.course.bean.Address" id="userList">
+  	<result column="id" property="id"/>
+  	<result column="name" property="name"/>
+	  <result column="telephone" property="telephone"/>
+	  <result column="province" property="province"/>
+	  <result column="address" property="address"/>
+	  <result column="isor" property="default"/>
+	  <result column="appUid" property="app_uid"/>
+	  <result column="city" property="city"/>
+	  <result column="conty" property="conty"/>
+  </resultMap>
+	
+	  <select id="getUserCount" resultType="org.liufeng.course.bean.Address">
+	  select * from address
+	  </select>
+
+</mapper>
+    

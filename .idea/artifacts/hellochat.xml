@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hellochat">
+    <output-path>$PROJECT_DIR$/out/artifacts/hellochat</output-path>
+    <root id="archive" name="hellochat.war">
+      <element id="javaee-facet-resources" facet="hellochat/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="hellochat" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
